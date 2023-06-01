@@ -11,7 +11,7 @@ $param_name = isset($_REQUEST["name"]) ? trim($_REQUEST["name"]) : "";
     <h1>Hello</h1>
     What is your name?
     <form method="POST" action="<?php print $_SERVER["PHP_SELF"] ?>">
-        <input type="text" name="name" value="<?php print $param_name ?>">
+        <input type="text" name="name" value="<?php print $param_name ?>" autocomplete="off">
         <input type="submit" value="Say Hello">
     </form>
 
